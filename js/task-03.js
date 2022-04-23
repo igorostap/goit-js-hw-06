@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const imgEl = images.map((image) =>
-  `<li class="item"><img src=${image.url} alt=${image.alt} width='240' height='120'></li>`).join('');
+  `<li class="item"><img src=${image.url} alt='${image.alt}' width='240' height='120'></li>`).join('');
 console.log(imgEl);
 const list = document.querySelector('.gallery');
 list.insertAdjacentHTML('beforeend', imgEl);
