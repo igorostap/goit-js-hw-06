@@ -10,6 +10,7 @@ inputText.addEventListener('blur', (event) => {
             inputText.classList.remove('invalid');
         }
     } else {
+        inputText.classList.remove('valid');
         inputText.classList.add('invalid');
     }
 });

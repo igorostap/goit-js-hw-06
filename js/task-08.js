@@ -8,7 +8,8 @@ const onFormSubmit = (evt) => {
     },
 
   } = evt.currentTarget;
-  !email || !password ? alert('Заповніть усі поля') : console.log({ email: password });
-  formReg.reset();
+  !email || !password ? alert('Заповніть усі поля') : console.log({ email: email,password: password });
+  
 };
 formReg.addEventListener('submit', onFormSubmit);
+formReg.reset();
